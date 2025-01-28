@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build any Layouts</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+<!-- equal sections -->
+<div class="grid sm:grid-cols-2 gap-4 m-4">
+    <div class="min-h-[100px] bg-orange-500 shadow rounded-lg"></div>
+    <div class="min-h-[100px] bg-teal-500 shadow rounded-lg"></div>
+</div>
+<!-- overwrite smallscreen by "grid-cols-2" equal section for mobile too -->
+<div class="grid sm:grid-cols-2 gap-4 m-4 grid-cols-2">
+    <div class="min-h-[100px] bg-red-500 shadow rounded-lg"></div>
+    <div class="min-h-[100px] bg-purple-500 shadow rounded-lg"></div>
+</div>
+<!-- 3-equal portions  -->
+<!-- <div class="m-4 grid gap-4 grid-cols-3 sm:grid-cols-3"> -->
+    <div class="m-4 grid gap-4 sm:grid-cols-3">
+    <div class="min-h-[100px] bg-red-400 shadow rounded-lg"></div>
+    <div class="min-h-[100px] bg-teal-500 shadow rounded-lg"></div>
+    <div class="min-h-[100px] bg-purple-500 shadow rounded-lg"></div>
+</div>
+<!-- 4-equal portions  -->
+    <div class="m-4 grid gap-4 sm:grid-cols-4">
+        <div class="min-h-[100px] bg-red-400 shadow rounded-lg"></div>
+        <div class="min-h-[100px] bg-teal-500 shadow rounded-lg"></div>
+        <div class="min-h-[100px] bg-purple-500 shadow rounded-lg"></div>
+        <div class="min-h-[100px] bg-orange-500 shadow rounded-lg"></div>
+    </div>
+
+<br> 
+<h1 class="font-bold text-center text-red-900 underline">Non Equal section grid layout </h1>
+
+    <!-- non-equal section -->
+    <div class="m-4 grid gap-4 grid-cols-2 sm:grid-cols-12">
+        <div class="min-h-[100px] bg-red-500 shadow rounded-lg sm:col-span-2"></div>
+        <div class="min-h-[100px] bg-purple-500 shadow rounded-lg sm:col-span-10"></div>
+    </div> 
+    <div class="m-4 grid gap-4 grid-cols-1 sm:grid-cols-12">
+        <div class="min-h-[100px] bg-orange-500 shadow rounded-lg sm:col-span-2"></div>
+        <div class="min-h-[100px] bg-teal-500 shadow rounded-lg sm:col-span-10"></div>
+    </div> 
+
+    <!-- 3- non-equal section -->
+     <!-- <div class="m-4 grid gap-4 grid-cols-3 sm:grid-cols-12"> -->
+    <div class="m-4 grid gap-4 grid-cols-1 sm:grid-cols-12">
+        <div class="min-h-[100px] bg-pink-500 shadow rounded-lg sm:col-span-2"></div>
+        <div class="min-h-[100px] bg-green-500 shadow rounded-lg sm:col-span-8"></div>
+        <div class="min-h-[100px] bg-purple-500 shadow rounded-lg sm:col-span-2"></div>
+    </div>
+
+    
+ <!-- 3- non-equal section and in small scree hide the small sections-->
+     <!-- <div class="m-4 grid gap-4 grid-cols-3 sm:grid-cols-12"> -->
+        <div class="m-4 grid gap-4 sm:grid-cols-12">
+            <div class="min-h-[100px] bg-pink-900 shadow rounded-lg sm:col-span-2 sm:block hidden"></div>
+            <div class="min-h-[100px] bg-green-900 shadow rounded-lg sm:col-span-8"></div>
+            <div class="min-h-[100px] bg-purple-900 shadow rounded-lg sm:col-span-2 sm:block hidden"></div>
+        </div> 
+
+
+
+</body>
+</html>
